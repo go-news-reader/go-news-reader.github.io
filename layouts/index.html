@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ .Site.Title }} — Pure-Go multi-source news &amp; social aggregator — one unified feed.</title>
+<meta name="description" content="Pure-Go multi-source news &amp; social aggregator — one unified feed.">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+<link rel="stylesheet" href="{{ "css/brand.css" | relURL }}">
+<script src="{{ "js/theme.js" | relURL }}"></script>
+</head><body>
+<section class="hero">
+  <button id="themebtn" class="theme" type="button">Theme: System</button>
+  <img src="{{ "img/go-news-reader-white.png" | relURL }}" alt="go-news-reader">
+  <h1>go-news-reader</h1>
+  <p>Pure-Go multi-source news &amp; social aggregator — one unified feed.</p>
+  <div class="btns">
+    <a class="btn btn-solid" href="https://go-news-reader.github.io/docs/">Documentation</a>
+    <a class="btn btn-ghost" href="https://github.com/go-news-reader">GitHub</a>
+  </div>
+</section>
+<div class="wrap">
+  <div class="panel">
+    <h2>What is go-news-reader?</h2>
+    <p>go-news-reader is a pure-Go (CGO=0) multi-source news &amp; social aggregator with a go-widgets UI: one app, one unified feed, many sources — each behind the same small `source.Provider` contract. Each platform has a standalone pure-Go client library in its own org (go-reddit, go-syndication, go-hackernews, go-newsgroups, go-mastodon, go-lemmy, go-atproto/Bluesky, …); this org&#x27;s `reader` adds a thin provider adapter per source that maps onto a normalized `source.Item`.</p>
+  </div>
+  <h2 class="section">Repository</h2>
+  <p class="sub">{{ len site.Data.pkgs.packages }} module(s) — generated from the org's repos.</p>
+  <div class="grid">
+    <div class="card"><div class="chip">RE</div><div class="nm">reader</div><div class="ds">Pure-Go multi-source news/social aggregator (Reddit, RSS, HN, Usenet, Mastodon, Lemmy, Bluesky, Twitter, Instagram, TikTok) with a go-widgets UI. CGO=0.</div><div class="lk"><a href="https://github.com/go-news-reader/reader">GitHub</a> · <a href="https://pkg.go.dev/github.com/go-news-reader/reader">pkg.go.dev</a></div></div>
+  </div>
+</div>
+<footer>Built with Hugo · Pure Go, CGO=0 · Branding from <a href="https://github.com/go-news-reader/brand">go-news-reader/brand</a></footer>
+</body></html>

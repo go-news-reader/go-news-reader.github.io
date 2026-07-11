@@ -1,0 +1,4 @@
+baseURL = "https://go-news-reader.github.io/"
+languageCode = "en-us"
+title = "go-news-reader"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
