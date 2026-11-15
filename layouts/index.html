@@ -38,7 +38,7 @@
   <div class="hero"><div class="wrap">
     <div>
       <h1 class="head">go-news-reader</h1>
-      <p class="sub">Pure-Go multi-source news &amp; social aggregator — one unified feed.</p>
+      <p class="sub">{{ if partial "mantra-on.html" . }}Go{{ else }}Pure-Go{{ end }} multi-source news &amp; social aggregator — one unified feed.</p>
       {{/* [[params.cta]] in hugo.toml: the kit renders the row */}}
       {{ partial "cta.html" . }}
     </div>
